@@ -10,4 +10,6 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 
 ## Steps Taken
 
-Used conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
+* Used conditional formatting to fill each cell in the `state` column with a different color, depending on whether the associated campaign was successful, failed, or canceled, or is currently live.
+
+* Created a new column O called `Percent Funded` that uses a formula {=(Ex/Dx)} to uncover how much money a campaign made towards its initial goal as a percentage and used conditional formatting to fill each cell in the `Percent Funded` column using a three-color scale. The scale starts at 0 with red, transitioning to green at 100, and blue at 200.
