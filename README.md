@@ -15,3 +15,7 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 * Created a new column O called `Percent Funded` that uses a formula `=(Ex/Dx)` to uncover how much money a campaign made towards its initial goal as a percentage and used conditional formatting to fill each cell in the `Percent Funded` column using a three-color scale. The scale starts at 0 with red, transitioning to green at 100, and blue at 200.
 
 * Created a new column P called `Average Donation` that uses a formula `=IF(Lx=0, 0, Ex/Lx)` to uncover how much each backer for the project paid on average.
+
+* Created two new columns, one called `Category` at Q and another called `Sub-Category` at R, which use formulas to split the `Category and Sub-Category` column into two parts.
+
+
