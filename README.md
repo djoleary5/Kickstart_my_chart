@@ -52,12 +52,12 @@ Using the `COUNTIFS()` formula, counted how many successful, failed, and cancele
 
 ## Conclusions
 
-# 1. Given the provided data, what are three conclusions we can draw about Kickstarter campaigns?
+### 1. Given the provided data, what are three conclusions we can draw about Kickstarter campaigns?
 1.  The majority of campaigns are successful.  Looking at the colors in ‘state’ column, it appears that the majority are green(successful) and this is confirmed by our pivot table, where it shows 2185 campaigns were successful while only 1530 failed, 349 were cancelled and 50 are ongoing.
 2.  The most successful categories are also the three categories with the most campaigns and were art/entertainment focused, ‘film & video’, ‘music’, and ‘theater’.  One explanation for this could be that the artist’s launching these campaigns have an existing audience who wants to see this artist create more art.
 3.  The subcategory stats are very telling.  Very few subcategories have a relatively balanced mix of failed and successful campaigns.  All but two subcategories have either a significant majority of successful campaigns or a significant majority of failed (or canceled) campaigns.  For example, almost 400 of the 600 technology campaigns failed (or canceled), however all 140 or the hardware subcategory were successful.  
-# 2. What are some limitations of this dataset?
+### 2. What are some limitations of this dataset?
 One limitation of the dataset is that it does not say what/if the launchers of each campaign offered as incentives for backing their campaign.  For example, a musician may include a copy of the new album for a $10 donation and a signed copy for a $100 donation.  Film directors have offered walk-on roles in the film for donations of a certain amount. I would also be interested to know about the campaign launchers’ social media presence (number of followers, etc.).  The ability to ‘get the word’ out about the campaign may be a bigger predictor of success than the category, country, or timing of the campaign. 
-# 3. What are some other possible tables and/or graphs that we could create?
+### 3. What are some other possible tables and/or graphs that we could create?
 We could create a table listing the outcome counts for campaigns that were staff picks and those that were not, similarly we could list the outcomes for campaigns that were spotlighted and those that were not.  It would be interesting to see if there was a correlation between success rate and staff picks/spotlight.  
 
