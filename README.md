@@ -24,5 +24,40 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
  
 * The dates stored within the `deadline` and `launched_at` columns use Unix timestamps.  I created two new columns: `Date Created Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `launched_at` into Excel's date format and `Date Ended Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `deadline` into Excel's date format.
 
- * Created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
+ * Created a new sheet `Launch Date Outcomes` with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years` and a pivot chart line graph that visualizes this new table.
+ 
+* Create a new sheet with 8 columns:
+  * `Goal`
+  * `Number Successful`
+  * `Number Failed`
+  * `Number Canceled`
+  * `Total Projects`
+  * `Percentage Successful`
+  * `Percentage Failed`
+  * `Percentage Canceled`
+In the `Goal` column, create 12 rows with the following headers:
+  * Less than 1000
+  * 1000 to 4999
+  * 5000 to 9999
+  * 10000 to 14999
+  * 15000 to 19999
+  * 20000 to 24999
+  * 25000 to 29999
+  * 30000 to 34999
+  * 35000 to 39999
+  * 40000 to 44999
+  * 45000 to 49999
+  * Greater than or equal to 50000
+Using the `COUNTIFS()` formula, counted how many successful, failed, and canceled projects were created with goals within the ranges listed above. Populated the `Number Successful`, `Number Failed`, and `Number Canceled` columns with this data and also calculated the percentage of projects that were successful, failed, or canceled per goal range.  I also created a line chart that graphs the relationship between a goal's amount and its chances at success, failure, or cancellation.
+
+## Conclusions
+
+# 1. Given the provided data, what are three conclusions we can draw about Kickstarter campaigns?
+1.  The majority of campaigns are successful.  Looking at the colors in ‘state’ column, it appears that the majority are green(successful) and this is confirmed by our pivot table, where it shows 2185 campaigns were successful while only 1530 failed, 349 were cancelled and 50 are ongoing.
+2.  The most successful categories are also the three categories with the most campaigns and were art/entertainment focused, ‘film & video’, ‘music’, and ‘theater’.  One explanation for this could be that the artist’s launching these campaigns have an existing audience who wants to see this artist create more art.
+3.  The subcategory stats are very telling.  Very few subcategories have a relatively balanced mix of failed and successful campaigns.  All but two subcategories have either a significant majority of successful campaigns or a significant majority of failed (or canceled) campaigns.  For example, almost 400 of the 600 technology campaigns failed (or canceled), however all 140 or the hardware subcategory were successful.  
+# 2. What are some limitations of this dataset?
+One limitation of the dataset is that it does not say what/if the launchers of each campaign offered as incentives for backing their campaign.  For example, a musician may include a copy of the new album for a $10 donation and a signed copy for a $100 donation.  Film directors have offered walk-on roles in the film for donations of a certain amount. I would also be interested to know about the campaign launchers’ social media presence (number of followers, etc.).  The ability to ‘get the word’ out about the campaign may be a bigger predictor of success than the category, country, or timing of the campaign. 
+# 3. What are some other possible tables and/or graphs that we could create?
+We could create a table listing the outcome counts for campaigns that were staff picks and those that were not, similarly we could list the outcomes for campaigns that were spotlighted and those that were not.  It would be interesting to see if there was a correlation between success rate and staff picks/spotlight.  
 
