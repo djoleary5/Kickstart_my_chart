@@ -21,3 +21,6 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
 * Created a new sheet `Category Stats` with a pivot table that analyzes the initial worksheet to count how many campaigns were successful, failed, canceled, or are currently live per **category** with a stacked column pivot chart that can be filtered by country based on the table created.
 
  * Created a new sheet `Sub-Category Stats` with a pivot table that will analyze your initial sheet to count how many campaigns were successful, failed, or canceled, or are currently live per **sub-category** with a stacked column pivot chart that can be filtered by country and parent-category based on the table created.
+ 
+* The dates stored within the `deadline` and `launched_at` columns use Unix timestamps.  I created two new columns: `Date Created Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `launched_at` into Excel's date format and `Date Ended Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `deadline` into Excel's date format.
+
