@@ -24,3 +24,5 @@ Getting funded on Kickstarter requires meeting or exceeding the project's initia
  
 * The dates stored within the `deadline` and `launched_at` columns use Unix timestamps.  I created two new columns: `Date Created Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `launched_at` into Excel's date format and `Date Ended Conversion` that will use [this formula](http://spreadsheetpage.com/index.php/tip/converting_unix_timestamps/) to convert the data contained within `deadline` into Excel's date format.
 
+ * Created a new sheet with a pivot table with a column of `state`, rows of `Date Created Conversion`, values based on the count of `state`, and filters based on `parent category` and `Years`.
+
